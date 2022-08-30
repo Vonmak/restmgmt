@@ -1,0 +1,66 @@
+{
+    "users": [
+      {
+        "name": "james",
+        "email": "ann@codingthesmartway.com",
+        "password": "keith",
+        "id": 1
+      },
+      {
+        "name": "kevin",
+        "email": "kevin@thesmartway.com",
+        "password": "keith",
+        "id": 2
+      },
+      {
+        "name": "vic",
+        "email": "vic@g.com",
+        "password": "keith",
+        "id": 3
+      },
+      {
+        "name": "edwin",
+        "email": "edu@gmail.com",
+        "password": "vicrades",
+        "id": 4
+      },
+      {
+        "name": "griff",
+        "email": "griff@g.com",
+        "password": "vicrades",
+        "id": 5
+      },
+      {
+        "name": "kelvin",
+        "email": "k@g.com",
+        "password": "kelvin",
+        "id": 6
+      },
+      {
+        "name": "bat",
+        "email": "bat@g.com",
+        "password": "batman",
+        "id": 7
+      }
+    ],
+    "restaraunt": [
+      {
+        "name": "Haven Court",
+        "address": "Ngong road Prestige plaza",
+        "contact": "0790735726",
+        "id": 1
+      },
+      {
+        "name": "ihub",
+        "address": "kilimani",
+        "contact": "0748888247",
+        "id": 2
+      },
+      {
+        "name": "SkyTop Apartments",
+        "address": "kilimani",
+        "contact": "0748888247",
+        "id": 3
+      }
+    ]
+  }

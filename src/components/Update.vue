@@ -1,6 +1,7 @@
 <template>
   <Header />
-  <h1>Hello, user. This is your update page</h1>
+  <h1>Hello, {{name}}.</h1>
+  <h4>Update Restaraunt</h4> 
   <form action="" class="add">
     <input
       type="text"
@@ -20,7 +21,7 @@
       name="address"
       v-model="Restaraunt.address"
     />
-    <button type="button" v-on:click="upRes">Update Res</button>
+    <button type="button" v-on:click="upRes">Submit</button>
   </form>
 </template>
 <script>
@@ -32,6 +33,7 @@ export default {
   components: { Header },
   data() {
     return {
+      name:'',
       Restaraunt: {
         name: "",
         contact: "",
@@ -56,10 +58,10 @@ export default {
   },
   async mounted() {
     let user = localStorage.getItem("user_info");
-    this.name = JSON.parse(user).name;
     if (!user) {
       this.$router.push({ name: "Login" });
     }
+    this.name=JSON.parse(user).name;
     const result = await axios.get(
       "http://localhost:3000/restaraunt/" + this.$route.params.id
     );
